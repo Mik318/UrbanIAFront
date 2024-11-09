@@ -10,7 +10,7 @@ import {
 import {MatDivider, MatDividerModule} from "@angular/material/divider";
 import {MatProgressBar, MatProgressBarModule} from "@angular/material/progress-bar";
 import {MatButtonModule} from "@angular/material/button";
-import {CalendarioComponent} from "../calendario/calendario.component";
+import {CalendarioComponent} from "../../../shared/components/calendario/calendario.component";
 import {CommonModule, NgForOf} from "@angular/common";
 import {GraficaComponent} from "../../../shared/components/grafica/grafica.component";
 

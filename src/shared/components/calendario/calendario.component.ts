@@ -19,17 +19,23 @@ import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms';  /
     MatCardModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    ReactiveFormsModule,
-    FormControl
+    ReactiveFormsModule
   ],
   templateUrl: './calendario.component.html',
   styleUrl: './calendario.component.scss'
 })
 export class CalendarioComponent {
   selected : Date | null  = null
+  calendarioForm: FormGroup;
+
+  constructor() {
+    this.calendarioForm = new FormGroup({
+      fecha: new FormControl(null)
+    });
+  }
 
   onDateChange(date: any){
-    this.selected = date;
-    console.log(this.selected)
+    this.calendarioForm.get('fecha')?.setValue(date);
+    console.log(this.calendarioForm.get('fecha')?.value);
   }
 }
