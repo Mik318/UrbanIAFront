@@ -1,6 +1,20 @@
-import { Component } from '@angular/core';
-import {ChartData, ChartOptions} from "chart.js";
-import {BaseChartDirective} from "ng2-charts";
+import { Component, OnInit } from '@angular/core';
+import {
+  CategoryScale,
+  Chart,
+  ChartData,
+  ChartOptions,
+  Legend,
+  LinearScale,
+  Title,
+  Tooltip,
+  LineController,
+  PointElement, LineElement
+} from 'chart.js';
+import { BaseChartDirective } from 'ng2-charts';
+
+// Registrar las escalas, controladores y otros componentes necesarios de Chart.js
+Chart.register(LinearScale, CategoryScale, Title, Tooltip, Legend, LineController, PointElement, LineElement);
 
 @Component({
   selector: 'app-grafica',
@@ -9,38 +23,21 @@ import {BaseChartDirective} from "ng2-charts";
     BaseChartDirective
   ],
   templateUrl: './grafica.component.html',
-  styleUrl: './grafica.component.scss'
+  styleUrls: ['./grafica.component.scss']
 })
-export class GraficaComponent {
-  public chartData: ChartData<"line"> = {
-    labels: ['Ruta 1', 'Ruta 2', 'Ruta 3'],
-    datasets: [
-      {
-        label: 'Ascendente Maximo',
-        data: [25, 40, 10],
-        borderColor: 'blue',
-        backgroundColor: 'rgba(0, 0, 255, 0.1)',
-        fill: true,
-        tension: 0.4
-      },
-      {
-        label: 'Descendente Maximo',
-        data: [30, 35, 20],
-        borderColor: 'red',
-        backgroundColor: 'rgba(255, 0, 0, 0.1)',
-        fill: true,
-        tension: 0.4
-      },
-      {
-        label: 'Ocupabilidad Maxima',
-        data: [55, 75, 30],
-        borderColor: 'green',
-        backgroundColor: 'rgba(0, 255, 0, 0.1)',
-        fill: true,
-        tension: 0.4
-      }
-    ]
-  };
+export class GraficaComponent implements OnInit {
+  public chartData?: ChartData<'line'>;
+
+  ngOnInit() {
+    this.chartData = {
+      labels: ['Ruta 1', 'Ruta 2', 'Ruta 3'], // Etiquetas del eje X
+      datasets: [
+        { data: [65, 59, 80], label: 'Porcentaje de Accidentes' },
+        { data: [28, 48, 40], label: 'Porcentaje de Fallas' },
+        { data: [28, 48, 40], label: 'Porcentaje de Incendios' },
+      ],
+    };
+  }
 
   public chartOptions: ChartOptions = {
     responsive: true,
@@ -48,15 +45,17 @@ export class GraficaComponent {
       x: {
         title: {
           display: true,
-          text: 'Nombre de la Ruta'
-        }
+          text: 'Nombre de la Ruta',
+        },
+        type: 'category',  // Escala de tipo categoría para el eje X
       },
       y: {
         title: {
           display: true,
-          text: 'Valor'
-        }
-      }
-    }
+          text: 'Valor',
+        },
+        type: 'linear',  // Escala de tipo lineal para el eje Y
+      },
+    },
   };
 }

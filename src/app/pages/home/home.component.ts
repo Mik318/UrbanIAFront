@@ -13,6 +13,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {CalendarioComponent} from "../../../shared/components/calendario/calendario.component";
 import {CommonModule, NgForOf} from "@angular/common";
 import {GraficaComponent} from "../../../shared/components/grafica/grafica.component";
+import {ChartData, ChartOptions, ChartType} from "chart.js";
 
 @Component({
   selector: 'app-home',
@@ -39,4 +40,12 @@ import {GraficaComponent} from "../../../shared/components/grafica/grafica.compo
 })
 export class HomeComponent {
   recomendaciones = ['Recomendación 1']
+
+  total: number = 100; // Capacidad total disponible
+  ocupados: number = 75; // Número de unidades ocupadas
+
+  get ocupabilidad(): number {
+    // Calcula el porcentaje de ocupabilidad (ocupados/total * 100)
+    return (this.ocupados / this.total) * 100;
+  }
 }
