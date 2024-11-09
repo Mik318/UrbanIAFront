@@ -10,6 +10,8 @@ import {
 import {MatDivider, MatDividerModule} from "@angular/material/divider";
 import {MatProgressBar, MatProgressBarModule} from "@angular/material/progress-bar";
 import {MatButtonModule} from "@angular/material/button";
+import {CommonModule, NgForOf} from "@angular/common";
+import {GraficaComponent} from "../../../shared/components/grafica/grafica.component";
 
 @Component({
   selector: 'app-home',
@@ -25,11 +27,13 @@ import {MatButtonModule} from "@angular/material/button";
     MatCardModule,
     MatDividerModule,
     MatButtonModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    CommonModule,
+    GraficaComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  recomendaciones = ['Recomendación 1']
 }
