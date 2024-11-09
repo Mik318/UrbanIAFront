@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-subtitle>
+      Selecciona una fecha
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-calendar [(selected)]="selected" (selectedChange)="onDateChange($event)">
+    </mat-calendar>
+
+    <p>
+      Fecha seleccionada: {{selected}}
+    </p>
+  </mat-card-content>
+</mat-card>
