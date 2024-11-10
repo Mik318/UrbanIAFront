@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {
   MatCard,
   MatCardActions,
@@ -11,22 +11,23 @@ import {MatDivider, MatDividerModule} from "@angular/material/divider";
 import {MatProgressBar, MatProgressBarModule} from "@angular/material/progress-bar";
 import {MatButtonModule} from "@angular/material/button";
 import {CalendarioComponent} from "../../../shared/components/calendario/calendario.component";
-import {CommonModule, NgForOf} from "@angular/common";
+import {CommonModule} from "@angular/common";
 import {GraficaComponent} from "../../../shared/components/grafica/grafica.component";
 import {MapaCalorComponent} from "../../../shared/components/mapa-calor/mapa-calor.component";
 import data from '../../../shared/assets/analisis_data.json';
 import {
-  PieController,
+  ArcElement,
   CategoryScale,
   Chart,
   ChartData,
   ChartOptions,
   Legend,
-  Tooltip,
+  PieController,
   Title,
-  ArcElement
+  Tooltip
 } from 'chart.js';
-import { BaseChartDirective } from 'ng2-charts';
+import {BaseChartDirective} from 'ng2-charts';
+import {TypingEffectComponent} from "../../../shared/components/typing-effect/typing-effect.component";
 
 
 // Registrar las escalas, controladores y otros componentes necesarios de Chart.js
@@ -52,7 +53,8 @@ Chart.register(PieController, CategoryScale, Title, Tooltip, Legend, ArcElement)
     CommonModule,
     GraficaComponent,
     MapaCalorComponent,
-    BaseChartDirective
+    BaseChartDirective,
+    TypingEffectComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
@@ -65,7 +67,6 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(){
     this.secciones = data.secciones
-    console.log(this.secciones)
     this.chartData = {
       labels: ['Ruta 1', 'Ruta 2', 'Ruta 3', 'Ruta 4'],
       datasets: [
