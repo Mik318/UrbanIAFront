@@ -1,27 +1,83 @@
-# Front
+# UrbanAI 🚌
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+![Versión](https://img.shields.io/badge/versión-1.0.0-blue)
+![Angular](https://img.shields.io/badge/Angular-17-red)
+![Python](https://img.shields.io/badge/Python-3.8+-yellow)
 
-## Development server
+UrbanAI es una solución innovadora de análisis de transporte público desarrollada para la Agencia de Transporte de Yucatán (ATY). El sistema utiliza inteligencia artificial para identificar y analizar puntos problemáticos en el sistema de transporte público de Mérida, proporcionando insights accionables y recomendaciones para la mejora del servicio.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🎯 Objetivos del Proyecto
 
-## Code scaffolding
+- Identificar zonas de aglomeración de usuarios
+- Detectar deficiencias en el servicio de transporte
+- Generar recomendaciones basadas en datos para optimización de rutas
+- Visualizar métricas clave de rendimiento del sistema de transporte
+- Proponer soluciones basadas en el análisis de patrones de movilidad
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 🚀 Características Principales
 
-## Build
+- **Dashboard Interactivo**: Visualización en tiempo real de métricas y KPIs
+- **Mapas de Calor**: Representación visual de zonas de alta demanda
+- **Análisis Predictivo**: Modelos de IA para anticipar patrones de demanda
+- **Generación de Propuestas**: Sugerencias automatizadas para nuevas rutas
+- **Reportes Detallados**: Informes completos sobre el estado del sistema
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🛠️ Tecnologías Utilizadas
 
-## Running unit tests
+### Frontend
+- Angular 17
+- Angular Material
+- TailwindCSS
+- Chart.js
+- TypeScript
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## 📊 Visualizaciones y Análisis
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+El dashboard incluye:
+- Mapas de calor de densidad de usuarios
+- Gráficos de tendencias temporales
+- Métricas de rendimiento del sistema
+- Indicadores de satisfacción del usuario
+- Visualización de rutas y paradas
 
-## Further help
+## 🤖 Modelo de IA
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+El sistema utiliza modelos de aprendizaje automático para:
+1. Análisis de patrones de demanda
+2. Predicción de zonas de alta concentración
+3. Optimización de rutas existentes
+4. Generación de propuestas de nuevas rutas
+5. Identificación de puntos críticos de servicio
+
+## 🚗 Funcionalidades de Transporte
+
+- Análisis de rutas existentes
+- Identificación de zonas sin cobertura
+- Optimización de frecuencias de servicio
+- Recomendaciones de nuevas paradas
+- Análisis de interconexión entre rutas
+
+## 📈 Métricas Clave
+
+- Tiempo de espera promedio
+- Densidad de usuarios por zona
+- Cobertura de servicio
+- Eficiencia de rutas
+- Satisfacción del usuario
+
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT - vea el archivo [LICENSE.md](LICENSE.md) para más detalles.
+
+## ✨ Agradecimientos
+
+- Agencia de Transporte de Yucatán (ATY)
+- Unidad Profesional Interdisciplinaria de Energía y Movilidad (IPN)
+- Equipo de desarrollo e investigación
+- Contribuidores y colaboradores del proyecto
+
+
+---
+Desarrollado con ❤️ para mejorar el transporte público en Mérida, Yucatán.
