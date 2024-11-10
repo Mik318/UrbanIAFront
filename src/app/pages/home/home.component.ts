@@ -23,12 +23,14 @@ import {
   ChartOptions,
   Legend,
   Tooltip,
-  Title
+  Title,
+  ArcElement
 } from 'chart.js';
 import { BaseChartDirective } from 'ng2-charts';
 
+
 // Registrar las escalas, controladores y otros componentes necesarios de Chart.js
-Chart.register(PieController, CategoryScale, Title, Tooltip, Legend)
+Chart.register(PieController, CategoryScale, Title, Tooltip, Legend, ArcElement);
 
 @Component({
   selector: 'app-home',
@@ -57,7 +59,7 @@ Chart.register(PieController, CategoryScale, Title, Tooltip, Legend)
 })
 export class HomeComponent implements OnInit{
 
-  public chartData?: ChartData<'pie'>;
+  public chartData?: ChartData<'doughnut'>;
   secciones: any
 
 
