@@ -14,6 +14,7 @@ import {CalendarioComponent} from "../../../shared/components/calendario/calenda
 import {CommonModule, NgForOf} from "@angular/common";
 import {GraficaComponent} from "../../../shared/components/grafica/grafica.component";
 import {ChartData, ChartOptions, ChartType} from "chart.js";
+import {MapaCalorComponent} from "../../../shared/components/mapa-calor/mapa-calor.component";
 
 @Component({
   selector: 'app-home',
@@ -33,7 +34,8 @@ import {ChartData, ChartOptions, ChartType} from "chart.js";
     CalendarioComponent,
     MatProgressBarModule,
     CommonModule,
-    GraficaComponent
+    GraficaComponent,
+    MapaCalorComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
