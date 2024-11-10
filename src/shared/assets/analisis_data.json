@@ -3,17 +3,45 @@
     {
       "titulo": "Patrones de Viaje",
       "descripcion": [
+        "Los datos muestran viajes realizados principalmente en días de semana (viernes) y fines de semana (sábado).",
+        "Los horarios de los viajes se concentran principalmente en horas pico, como la mañana (4:59-7:00) y la tarde (16:00-19:59).",
+        "Los orígenes y destinos más comunes son 31-1 y 31-1, lo que sugiere una alta demanda de transporte entre estas zonas."
+      ],
+      "fecha_analisis":	"2024-11-09 22:30:46"
+    },
+    {
+      "titulo": "Áreas de Baja Cobertura",
+      "descripcion": [
+        "Los datos muestran que hay viajes realizados con vehículos 'No identificados', lo que podría indicar una falta de cobertura formal de transporte público en algunas áreas.",
+        "Algunas zonas, como 060A, parecen tener una demanda significativa de transporte, pero los datos no muestran una cobertura formal de rutas de autobús."
+      ],
+      "fecha_analisis":	"2024-11-09 22:30:46"
+    },
+    {
+      "titulo": "Oportunidades de Mejora",
+      "descripcion": [
+        "Aumentar la cobertura de transporte público en las áreas con alta demanda, como las zonas 31-1 y 060A.",
+        "Mejorar la frecuencia de los servicios de transporte público durante las horas pico, cuando se concentra la mayor parte de la demanda.",
+        "Considerar la posibilidad de implementar nuevas rutas de autobús o ajustar las existentes para atender mejor las necesidades de los usuarios."
+      ],
+      "fecha_analisis":	"2024-11-09 22:30:46"
+    },
+    {
+      "titulo": "Patrones de Viaje",
+      "descripcion": [
         "La mayoría de los viajes se realizan dentro de la zona de distancia media (D02_[2000-5000]) y zona de distancia alta (D03_[5000-10000])",
         "Hay un número significativo de viajes de larga distancia (D04_[10000-20000])",
         "Los usuarios de mayor edad (A02_[65-100]) tienden a realizar viajes de distancias medias y altas"
-      ]
+      ],
+      "fecha_analisis":	"2024-11-09 22:30:46"
     },
     {
       "titulo": "Áreas de Baja Cobertura",
       "descripcion": [
         "La zona 12 parece tener una baja cobertura, ya que solo se registra un viaje con origen en esta zona",
         "La zona 14 también muestra una baja cobertura, con solo 3 viajes registrados"
-      ]
+      ],
+      "fecha_analisis":	"2024-11-09 22:30:46"
     },
     {
       "titulo": "Oportunidades de Mejora",
