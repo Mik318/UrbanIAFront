@@ -30,11 +30,21 @@ export class GraficaComponent implements OnInit {
 
   ngOnInit() {
     this.chartData = {
-      labels: ['Ruta 1', 'Ruta 2', 'Ruta 3'], // Etiquetas del eje X
+      labels: ['Parada 1', 'Parada 2', 'Parada 3', 'Parada 4', 'Parada 5', 'Parada 6', 'Parada 7', 'Parada 8', 'Parada 9', 'Parada 10'], // Etiquetas del eje X
       datasets: [
-        { data: [65, 59, 80], label: 'Porcentaje de Accidentes' },
-        { data: [28, 48, 40], label: 'Porcentaje de Fallas' },
-        { data: [28, 48, 40], label: 'Porcentaje de Incendios' },
+        {
+          data: [65, 59, 80, 72, 55, 90, 60, 82, 75, 88],
+          label: 'Personas Bajan',
+          fill: false,
+          borderColor: 'rgb(75, 192, 192)',
+          tension: 0.1 },
+        {
+          data: [45, 50, 60, 55, 40, 80, 70, 65, 50, 72],
+          label: 'Personas Suben',
+          fill: false,
+          borderColor: 'rgb(0, 255, 0)',
+          tension: 0.1
+        },
       ],
     };
   }
@@ -45,14 +55,14 @@ export class GraficaComponent implements OnInit {
       x: {
         title: {
           display: true,
-          text: 'Nombre de la Ruta',
+          text: 'Ruta 79 Chubuma Glorieta los Cantaritos  ',
         },
         type: 'category',  // Escala de tipo categoría para el eje X
       },
       y: {
         title: {
           display: true,
-          text: 'Valor',
+          text: 'Cantidad de personas',
         },
         type: 'linear',  // Escala de tipo lineal para el eje Y
       },
