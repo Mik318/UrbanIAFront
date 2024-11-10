@@ -1,5 +1,5 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #sidenav mode="side" [opened]="isOpened">
+  <mat-sidenav #sidenav mode="side" [opened]="isOpened" >
     <mat-toolbar class="flex justify-center">
       <mat-icon>person</mat-icon>
     </mat-toolbar>
@@ -10,7 +10,7 @@
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-toolbar color="primary" class="fixed-toolbar">
+    <mat-toolbar class="fixed-toolbar" color="primary">
       <button mat-icon-button (click)="toggleSidenav()">
         <mat-icon>menu</mat-icon>
       </button>

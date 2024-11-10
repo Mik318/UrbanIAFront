@@ -70,14 +70,15 @@ export class HomeComponent implements OnInit{
       labels: ['Ruta 1', 'Ruta 2', 'Ruta 3', 'Ruta 4'],
       datasets: [
         {
-          // data: [40, 30, 20, 10],
-          // backgroundColor: [
-          //   'rgb(255, 99, 132)',
-          //   'rgb(54, 162, 235)',
-          //   'rgb(255, 205, 86)',
-          //   'rgb(25, 105, 20)'
-          // ],
-          data: [40], label:'Ruta 1', backgroundColor: 'rgb(255, 99, 132)'
+          label: 'Cantidad de Camiones por Ruta',
+          data: [40, 30, 20, 10],
+          backgroundColor: [
+            '#c2efa7',
+            '#9be373',
+            '#77d348',
+            '#54b028'
+          ],
+          hoverOffset: 4
         }
       ]
     }

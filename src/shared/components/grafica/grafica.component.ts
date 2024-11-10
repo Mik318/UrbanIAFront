@@ -36,13 +36,13 @@ export class GraficaComponent implements OnInit {
           data: [65, 59, 80, 72, 55, 90, 60, 82, 75, 88],
           label: 'Personas Bajan',
           fill: false,
-          borderColor: 'rgb(75, 192, 192)',
+          borderColor: '#c2efa7',
           tension: 0.1 },
         {
           data: [45, 50, 60, 55, 40, 80, 70, 65, 50, 72],
           label: 'Personas Suben',
           fill: false,
-          borderColor: 'rgb(0, 255, 0)',
+          borderColor: '#54b028',
           tension: 0.1
         },
       ],
